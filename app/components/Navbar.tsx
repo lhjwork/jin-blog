@@ -7,5 +7,5 @@ export default function Navbar() {
         진이의<span>블로그</span>
       </Link>
     </nav>)
-   
+//    24:07
 }

@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Next.js 14 Blog
 
-## Getting Started
+## 📊 프로젝트 흐름도
 
-First, run the development server:
+### 사용자
+- 블로그 페이지 방문
+- 포스트 목록 조회
+- 상세 포스트 클릭
+- 다크모드/라이트모드 전환
+
+### 프론트엔드
+- Next.js 14로 페이지 라우팅 및 성능 최적화
+- Sanity.io에서 데이터를 불러와 SSR/SSG로 렌더링
+- Tailwind CSS와 Shadcn/Ui로 반응형 UI 구현
+
+### 백엔드 (CMS)
+- Sanity.io를 통해 블로그 포스트 관리 및 데이터 제공
+- 실시간 미리보기 및 버전 관리 지원
+
+## 🎬 프로젝트 시나리오
+
+### 메인 페이지
+- 블로그 포스트 목록이 표시됩니다.
+- 최신 포스트가 상단에 노출되며, 미리보기 이미지와 제목, 간단한 설명을 확인할 수 있습니다.
+
+### 상세 페이지
+- 특정 블로그 포스트를 클릭하면 해당 포스트의 상세 내용이 표시됩니다.
+
+### 다크모드/라이트모드
+- 사용자 환경에 맞춰 다크모드와 라이트모드를 전환할 수 있습니다.
+
+### 관리자
+- Sanity.io를 통해 블로그 콘텐츠를 쉽게 생성, 수정 및 삭제할 수 있습니다.
+
+## ⚙️ 사용한 기술 스택과 기술 선정 이유
+
+1. **Next.js 14**
+   - 선택 이유:
+     - 페이지 라우팅과 성능 최적화에 강점이 있는 프레임워크
+     - SSR(서버 사이드 렌더링)과 SSG(정적 사이트 생성) 지원
+     - SEO 최적화 및 빠른 사용자 경험 제공
+
+2. **React**
+   - 선택 이유:
+     - 컴포넌트 기반 개발로 재사용성과 유지보수성 확보
+     - 효율적인 상태 관리와 UI 렌더링
+
+3. **Sanity.io**
+   - 선택 이유:
+     - 헤드리스 CMS로 콘텐츠 관리가 유연하고 직관적
+     - 실시간 데이터 업데이트와 강력한 미리보기 기능 제공
+
+4. **Tailwind CSS**
+   - 선택 이유:
+     - 빠르게 스타일링 가능하며, 유틸리티 클래스 기반으로 커스터마이징 용이
+     - 반응형 디자인을 쉽게 구현
+
+5. **Shadcn/Ui**
+   - 선택 이유:
+     - Modern하고 세련된 UI 컴포넌트를 제공
+     - Tailwind CSS와 완벽하게 호환
+
+## 🚀 프로젝트 실행 방법
+
+### 프로젝트 클론
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-repo/nextjs-blog.git
+cd nextjs-blog
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 설치
+```
+// next package 설치
+npm i
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+// sanity 설치
+cd sanity  
+npm i
+````

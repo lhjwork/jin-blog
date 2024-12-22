@@ -9,6 +9,11 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config) => {
+    config.externals = config.externals || [];
+    config.externals.push("@sanity/vision");
+    return config;
+  },
 };
 
 module.exports = nextConfig;
